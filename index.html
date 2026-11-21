@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Placement Test tiếng Anh đầu vào – 35 câu, biết ngay trình độ</title>
+<meta name="description" content="Làm bài kiểm tra xếp lớp tiếng Anh 35 câu và đối chiếu số câu đúng để biết trình độ của bạn từ A1 đến C1.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Lexend:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F6FF; --surface:#FFFFFF; --ink:#14183A; --muted:#5B6190; --line:#DDE2F7;
+  --blue:#3B5BFF; --indigo:#1E2A78; --mint:#16C3A0; --sun:#FFC83D; --coral:#FF7A6B;
+  --shadow:0 18px 50px -20px rgba(30,42,120,.35);
+  --hero-a:#EEF1FF; --hero-b:#E3FBF5;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1230; --surface:#161C45; --ink:#EEF0FF; --muted:#A5ABD6; --line:#2A3270;
+    --shadow:0 18px 50px -20px rgba(0,0,0,.6); --hero-a:#141A47; --hero-b:#0F2A3A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1230; --surface:#161C45; --ink:#EEF0FF; --muted:#A5ABD6; --line:#2A3270;
+  --shadow:0 18px 50px -20px rgba(0,0,0,.6); --hero-a:#141A47; --hero-b:#0F2A3A; color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font-family:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Lexend','Be Vietnam Pro',system-ui,sans-serif;line-height:1.15;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:8px}
+
+/* nav */
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Lexend',sans-serif;font-weight:700;text-decoration:none}
+.logo i{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--mint));display:grid;place-items:center;color:#fff;font-style:normal;font-size:17px}
+.navlinks{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:500;color:var(--muted)}
+.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:#fff;text-decoration:none;font-family:'Lexend',sans-serif;font-weight:600;padding:16px 28px;border-radius:16px;box-shadow:0 12px 28px -10px var(--blue),inset 0 -3px 0 rgba(0,0,0,.18);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+.btn.sm{padding:11px 20px;font-size:14px;border-radius:12px}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}
+.btn.big{padding:20px 38px;font-size:18px;background:var(--sun);color:#1b1500;box-shadow:0 14px 34px -10px var(--sun),inset 0 -4px 0 rgba(0,0,0,.15)}
+.btn svg{width:18px;height:18px}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--hero-a),var(--hero-b));border-radius:0 0 48px 48px;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;pointer-events:none}
+.hero:before{width:340px;height:340px;background:var(--blue);right:-80px;top:-100px;opacity:.25}
+.hero:after{width:300px;height:300px;background:var(--mint);left:-90px;bottom:-120px;opacity:.3}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:34px 0 84px;position:relative;z-index:1}
+.pill{display:inline-flex;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);padding:7px 14px 7px 8px;border-radius:99px;font-size:14px;font-weight:500;color:var(--muted)}
+.pill b{background:var(--mint);color:#04372c;border-radius:99px;padding:2px 10px;font-size:13px}
+h1{font-size:clamp(36px,5.6vw,64px);font-weight:800;margin:22px 0 18px}
+h1 span{display:inline-block;background:var(--sun);color:#1b1500;padding:0 14px;border-radius:14px;transform:rotate(-1.5deg)}
+.lead{font-size:18px;color:var(--muted);max-width:30em}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 26px}
+.facts{display:flex;gap:28px;flex-wrap:wrap}
+.facts div{font-size:14px;color:var(--muted)}
+.facts strong{display:block;font-family:'Lexend',sans-serif;font-size:26px;color:var(--ink)}
+
+/* stairs */
+.stairs-card{background:var(--surface);border:1px solid var(--line);border-radius:30px;padding:26px 24px 20px;box-shadow:var(--shadow)}
+.stairs-card h3{font-size:17px;margin-bottom:4px}
+.stairs-card p{font-size:14px;color:var(--muted)}
+.stairs{display:flex;align-items:flex-end;gap:10px;height:230px;margin-top:22px}
+.step{flex:1;border:0;border-radius:14px 14px 6px 6px;cursor:pointer;color:#fff;font-family:'Lexend',sans-serif;font-weight:700;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;padding-top:10px;height:0;animation:grow .9s cubic-bezier(.2,.9,.3,1.1) forwards;position:relative;transition:filter .2s,transform .2s}
+.step small{font-weight:500;font-size:11px;opacity:.9}
+.step:hover{filter:brightness(1.08)}
+.step.on{transform:translateY(-8px);box-shadow:0 14px 24px -10px rgba(0,0,0,.4)}
+.step.on:after{content:"Bạn ở đây?";position:absolute;top:-34px;background:var(--ink);color:var(--bg);font-size:11px;font-weight:600;padding:4px 9px;border-radius:8px;white-space:nowrap}
+@keyframes grow{to{height:var(--h)}}
+
+/* sections */
+section{padding:84px 0 0}
+.sec-head{max-width:640px;margin-bottom:38px}
+.sec-head h2{font-size:clamp(28px,4vw,42px);font-weight:700;margin-bottom:12px}
+.sec-head p{color:var(--muted);font-size:17px}
+
+/* levels table */
+.levels{display:grid;gap:12px}
+.lv{display:grid;grid-template-columns:96px 1fr 1.4fr;gap:20px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:18px 22px;transition:box-shadow .2s,border-color .2s}
+.lv.on{border-color:var(--blue);box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 25%,transparent)}
+.badge{width:72px;height:72px;border-radius:20px;display:grid;place-items:center;color:#fff;font-family:'Lexend',sans-serif;font-weight:800;font-size:20px}
+.lv h3{font-size:18px;margin-bottom:6px}
+.lv .range{font-size:14px;color:var(--muted)}
+.bar{height:8px;background:var(--line);border-radius:9px;margin-top:10px;overflow:hidden;position:relative}
+.bar i{position:absolute;top:0;bottom:0;border-radius:9px}
+.lv p{font-size:15px;color:var(--muted)}
+
+/* calculator */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--indigo);color:#fff;border-radius:36px;overflow:hidden;box-shadow:var(--shadow)}
+.calc .l{padding:44px}
+.calc .r{padding:44px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));display:flex;flex-direction:column;justify-content:center;gap:10px;text-align:center}
+.calc h2{font-size:clamp(26px,3.6vw,38px);margin-bottom:12px}
+.calc p{opacity:.8}
+.score{font-family:'Lexend',sans-serif;font-weight:800;font-size:76px;line-height:1}
+.score small{font-size:22px;opacity:.6;font-weight:500}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:12px;border-radius:12px;background:rgba(255,255,255,.2);margin:28px 0 8px;outline-offset:6px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:32px;height:32px;border-radius:50%;background:var(--sun);border:4px solid #fff;cursor:grab;box-shadow:0 6px 14px rgba(0,0,0,.3)}
+input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:var(--sun);border:4px solid #fff;cursor:grab}
+.ticks{display:flex;justify-content:space-between;font-size:12px;opacity:.6}
+.res-badge{display:inline-block;align-self:center;padding:8px 20px;border-radius:99px;font-family:'Lexend',sans-serif;font-weight:700;font-size:18px;color:#fff;transition:background .3s}
+.res-name{font-size:17px;font-weight:600}
+.res-desc{font-size:14px;opacity:.8;max-width:26em;margin:0 auto}
+
+/* steps / tips */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:28px}
+.card .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:24px;margin-bottom:18px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{font-size:15px;color:var(--muted)}
+.tips{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.tip{display:flex;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 20px;font-size:15px;color:var(--muted)}
+.tip b{color:var(--ink);display:block;font-family:'Lexend',sans-serif;font-weight:600;margin-bottom:2px}
+.tip em{font-style:normal;font-size:22px}
+
+/* faq */
+details{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:0 22px;margin-bottom:10px}
+summary{cursor:pointer;list-style:none;padding:20px 0;font-family:'Lexend',sans-serif;font-weight:600;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:24px;line-height:1;color:var(--blue);transition:transform .25s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 0 20px;color:var(--muted);font-size:15px}
+
+/* final cta */
+.final{margin:90px 0 0;background:linear-gradient(135deg,var(--blue),#6A4DFF);border-radius:44px 44px 0 0;color:#fff;text-align:center;padding:76px 22px;position:relative;overflow:hidden}
+.final h2{font-size:clamp(30px,4.6vw,50px);font-weight:800;max-width:15em;margin:0 auto 14px}
+.final p{opacity:.85;margin-bottom:32px}
+.final .dots{position:absolute;inset:0;background:radial-gradient(rgba(255,255,255,.18) 1.5px,transparent 1.5px) 0 0/26px 26px;mask-image:linear-gradient(transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(transparent,#000 60%,transparent)}
+.final>*{position:relative}
+footer{background:#10163F;color:#9AA1D4;text-align:center;font-size:14px;padding:26px 22px calc(26px + env(safe-area-inset-bottom,0px))}
+
+@media(max-width:860px){
+  .hero-grid,.calc{grid-template-columns:1fr}
+  .lv{grid-template-columns:72px 1fr;gap:14px}.lv p{grid-column:1/-1}
+  .badge{width:60px;height:60px;font-size:17px}
+  .cards,.tips{grid-template-columns:1fr}
+  .navlinks a:not(.btn){display:none}
+  .calc .l,.calc .r{padding:30px 24px}
+  .stairs{height:200px;gap:7px}
+}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#"><i>Aa</i>English Placement</a>
+      <div class="navlinks">
+        <a href="#levels">Thang điểm</a><a href="#try">Tính thử</a><a href="#tips">Lưu ý</a><a href="#faq">Hỏi đáp</a>
+        <a class="btn sm" href="https://app.ninequiz.com/AOJ9B3IW" target="_blank" rel="noopener">Làm bài test</a>
+      </div>
+    </nav>
+    <div class="hero-grid">
+      <div>
+        <span class="pill"><b>35 câu</b> Bài kiểm tra xếp lớp đầu vào</span>
+        <h1>Biết ngay trình độ tiếng Anh của bạn ở mức <span>nào</span></h1>
+        <p class="lead">Làm một bài trắc nghiệm 35 câu, đếm số câu đúng và đối chiếu với thang điểm từ A1 đến C1 để chọn đúng lộ trình học ngay từ đầu.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://app.ninequiz.com/AOJ9B3IW" target="_blank" rel="noopener">Bắt đầu làm bài
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn ghost" href="#levels">Xem thang đánh giá</a>
+        </div>
+        <div class="facts">
+          <div><strong>35</strong>câu hỏi</div>
+          <div><strong>6</strong>cấp độ đánh giá</div>
+          <div><strong>A1–C1</strong>chuẩn CEFR</div>
+        </div>
+      </div>
+      <div class="stairs-card" aria-label="Bậc thang trình độ">
+        <h3>Bạn đang đứng ở bậc nào?</h3>
+        <p>Chạm vào từng bậc để xem số câu đúng tương ứng.</p>
+        <div class="stairs" id="stairs"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="levels">
+    <div class="sec-head">
+      <h2>Bảng đánh giá trình độ</h2>
+      <p>Đếm số câu bạn trả lời đúng trên tổng 35 câu, rồi tìm mức tương ứng bên dưới.</p>
+    </div>
+    <div class="levels" id="levelList"></div>
+  </section>
+
+  <section id="try">
+    <div class="calc">
+      <div class="l">
+        <h2>Đoán trước kết quả của bạn</h2>
+        <p>Kéo thanh trượt để xem số câu đúng tương ứng với cấp độ nào. Làm xong bài thật, bạn chỉ cần lấy số câu đúng của mình ra đối chiếu.</p>
+        <input type="range" id="slider" min="0" max="35" value="20" aria-label="Số câu đúng">
+        <div class="ticks"><span>0</span><span>10</span><span>18</span><span>25</span><span>31</span><span>35</span></div>
+      </div>
+      <div class="r" aria-live="polite">
+        <div class="score"><span id="sc">20</span><small>/35</small></div>
+        <span class="res-badge" id="rb">B1</span>
+        <div class="res-name" id="rn"></div>
+        <p class="res-desc" id="rd"></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Làm bài test trong 3 bước</h2><p>Gọn, rõ ràng và không cần cài thêm gì.</p></div>
+    <div class="cards">
+      <div class="card"><div class="ic" style="background:#E4E9FF">🖱️</div><h3>Bấm vào link bài test</h3><p>Nhấn nút “Làm bài test” để mở bài kiểm tra trên trang Ninequiz.</p></div>
+      <div class="card"><div class="ic" style="background:#DDF7F0">✍️</div><h3>Trả lời 35 câu hỏi</h3><p>Đọc kỹ từng câu và chọn đáp án bạn thấy đúng nhất. Không biết thì cứ chọn theo cảm nhận.</p></div>
+      <div class="card"><div class="ic" style="background:#FFF1C9">🎯</div><h3>Đối chiếu số câu đúng</h3><p>Lấy số câu đúng của bạn so với bảng đánh giá ở trên để biết mình thuộc cấp độ nào.</p></div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <div class="sec-head"><h2>Làm sao để kết quả phản ánh đúng bạn?</h2><p>Vài lưu ý nhỏ giúp bạn được xếp đúng lớp ngay lần đầu.</p></div>
+    <div class="tips">
+      <div class="tip"><em>🤫</em><div><b>Tự làm một mình</b>Kết quả chỉ có ý nghĩa khi đó là năng lực thật của bạn.</div></div>
+      <div class="tip"><em>📵</em><div><b>Không dùng từ điển hay dịch</b>Hãy để bài test đo đúng thứ bạn đang biết.</div></div>
+      <div class="tip"><em>🪑</em><div><b>Chọn nơi yên tĩnh</b>Chuẩn bị kết nối mạng ổn định để làm bài liền mạch.</div></div>
+      <div class="tip"><em>🙂</em><div><b>Thoải mái, đừng áp lực</b>Điểm thấp không sao cả. Biết đúng điểm xuất phát là bước đầu tiên.</div></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="sec-head"><h2>Câu hỏi thường gặp</h2></div>
+    <details><summary>Bài test gồm bao nhiêu câu?</summary><p>Bài test gồm 35 câu. Điểm tối đa là 35 câu đúng, tương ứng cấp độ Advanced (C1 trở lên).</p></details>
+    <details><summary>Làm sao biết mình thuộc cấp độ nào?</summary><p>Đếm số câu bạn trả lời đúng, sau đó đối chiếu với bảng đánh giá trên trang này. Ví dụ 19–25 câu đúng là Pre-Intermediate (B1).</p></details>
+    <details><summary>A1, B1, C1 nghĩa là gì?</summary><p>Đây là các mức trong khung tham chiếu châu Âu CEFR: A là sơ cấp, B là trung cấp, C là cao cấp. Số càng lớn, trình độ càng cao.</p></details>
+    <details><summary>Có thể làm lại bài test không?</summary><p>Bạn nên liên hệ trung tâm hoặc giáo viên phụ trách để được hướng dẫn về việc làm lại bài.</p></details>
+  </section>
+</main>
+
+<div class="final">
+  <div class="dots"></div>
+  <h2>Sẵn sàng biết mình đang ở đâu?</h2>
+  <p>35 câu hỏi, một cấp độ rõ ràng và một lộ trình phù hợp.</p>
+  <a class="btn big" href="https://app.ninequiz.com/AOJ9B3IW" target="_blank" rel="noopener">Vào làm bài test ngay
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+<footer>© English Placement Test. Thang đánh giá tham chiếu theo khung CEFR.</footer>
+
+<script>
+const L=[
+ {c:"A1",n:"Beginner (A1)",min:0,max:10,col:"#16C3A0",d:"Hiểu và dùng được những câu rất đơn giản, giới thiệu bản thân và hỏi đáp thông tin cơ bản."},
+ {c:"A2",n:"Elementary (A2)",min:11,max:18,col:"#2BB5D8",d:"Giao tiếp được trong các tình huống quen thuộc như mua sắm, hỏi đường, nói về công việc hằng ngày."},
+ {c:"B1",n:"Pre-Intermediate (B1)",min:19,max:25,col:"#3B8BFF",d:"Xử lý được phần lớn tình huống khi đi du lịch, kể về trải nghiệm, dự định và lý do của mình."},
+ {c:"B1+",n:"Intermediate (B1+ / B2-)",min:26,max:31,col:"#5B5CF6",d:"Trao đổi khá trôi chảy về chủ đề quen thuộc, đọc hiểu các văn bản dài hơn."},
+ {c:"B2",n:"Upper-Intermediate (B2)",min:32,max:34,col:"#8A4DFF",d:"Giao tiếp tự nhiên hơn, hiểu ý chính của văn bản phức tạp và trình bày quan điểm rõ ràng."},
+ {c:"C1+",n:"Advanced (C1 trở lên)",min:35,max:35,col:"#E04BC0",d:"Sử dụng tiếng Anh linh hoạt cho học tập và công việc, diễn đạt ý tưởng trôi chảy và chính xác."}
+];
+const rangeTxt=l=>l.min===l.max?`${l.min} câu đúng`:`${l.min}–${l.max} câu đúng`;
+const find=s=>L.find(l=>s>=l.min&&s<=l.max);
+const stairs=document.getElementById('stairs'),list=document.getElementById('levelList');
+L.forEach((l,i)=>{
+  const b=document.createElement('button');
+  b.className='step';b.type='button';
+  b.style.cssText=`--h:${34+i*17}%;background:linear-gradient(180deg,${l.col},color-mix(in srgb,${l.col} 70%,#1E2A78));animation-delay:${i*.09}s`;
+  b.innerHTML=`${l.c}<small>${l.min===l.max?l.min:l.min+'–'+l.max}</small>`;
+  b.setAttribute('aria-label',`${l.n}: ${rangeTxt(l)}`);
+  b.onclick=()=>{slider.value=Math.round((l.min+l.max)/2);update()};
+  stairs.appendChild(b);
+  const r=document.createElement('div');r.className='lv';
+  const left=l.min/35*100,w=Math.max((l.max-l.min+1)/35*100,3);
+  r.innerHTML=`<div class="badge" style="background:${l.col}">${l.c}</div>
+   <div><h3>${l.n}</h3><span class="range">${rangeTxt(l)}</span><div class="bar"><i style="left:${left}%;width:${w}%;background:${l.col}"></i></div></div>
+   <p>${l.d}</p>`;
+  list.appendChild(r);
+});
+const slider=document.getElementById('slider');
+function update(){
+  const s=+slider.value,l=find(s),i=L.indexOf(l);
+  document.getElementById('sc').textContent=s;
+  const rb=document.getElementById('rb');rb.textContent=l.c;rb.style.background=l.col;
+  document.getElementById('rn').textContent=l.n;
+  document.getElementById('rd').textContent=l.d;
+  [...stairs.children].forEach((e,k)=>e.classList.toggle('on',k===i));
+  [...list.children].forEach((e,k)=>e.classList.toggle('on',k===i));
+}
+slider.addEventListener('input',update);update();
+</script>
+</body>
+</html>
